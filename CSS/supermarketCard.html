@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Product Cards</title>
+
+    <style>
+
+        /* Remove default browser spacing */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(236, 236, 236);
+            font-family: Arial, sans-serif;
+        }
+
+        /* Page heading */
+        .title {
+            text-align: center;
+            margin: 40px 0 20px;
+            color: rgb(56, 70, 81);
+        }
+
+        /* Cards container */
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            padding: 20px;
+        }
+
+        /* Product card */
+        .card {
+            background-color: white;
+            width: 230px;
+            border-radius: 15px;
+            text-align: center;
+            padding: 20px;
+
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+            transition: transform 0.3s ease,
+                        box-shadow 0.3s ease;
+        }
+
+        /* Card hover effect */
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+        }
+
+        /* Product name */
+        h2 {
+            color: rgb(91, 125, 87);
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+
+        /* Product image */
+        .card img {
+            width: 140px;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        /* Description */
+        p {
+            color: gray;
+            margin-bottom: 15px;
+            line-height: 1.5;
+            min-height: 45px;
+        }
+
+        /* Price */
+        h3 {
+            color: rgb(38, 45, 140);
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+
+        /* Button */
+        button {
+            background-color: rgb(56, 70, 81);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 11px 25px;
+            cursor: pointer;
+            font-size: 15px;
+
+            transition: background-color 0.3s ease,
+                        transform 0.2s ease;
+        }
+
+        button:hover {
+            background-color: rgb(91, 125, 87);
+            transform: scale(1.05);
+        }
+
+
+        /* =========================
+           TABLET
+           ========================= */
+
+        @media (max-width: 900px) {
+
+            .container {
+                gap: 20px;
+            }
+
+            .card {
+                width: 220px;
+            }
+        }
+
+
+        /* =========================
+           MOBILE
+           ========================= */
+
+        @media (max-width: 600px) {
+
+            .title {
+                margin-top: 25px;
+                font-size: 26px;
+            }
+
+            .container {
+                flex-direction: column;
+                align-items: center;
+                padding: 15px;
+            }
+
+            .card {
+                width: 90%;
+                max-width: 350px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1 class="title">Our Products</h1>
+
+    <div class="container">
+
+        <!-- Milk -->
+        <div class="card">
+            <h2>Milk</h2>
+
+            <img src="milk.png" alt="Milk">
+
+            <p>Fresh and healthy dairy milk.</p>
+
+            <h3>₹60</h3>
+
+            <button>Buy Now</button>
+        </div>
+
+
+        <!-- Bread -->
+        <div class="card">
+            <h2>Bread</h2>
+
+            <img src="bread.jpeg" alt="Bread">
+
+            <p>Soft and freshly baked bread.</p>
+
+            <h3>₹40</h3>
+
+            <button>Buy Now</button>
+        </div>
+
+
+        <!-- Rice -->
+        <div class="card">
+            <h2>Rice</h2>
+
+            <img src="rice.jpeg" alt="Rice">
+
+            <p>Premium quality basmati rice.</p>
+
+            <h3>₹120</h3>
+
+            <button>Buy Now</button>
+        </div>
+
+
+        <!-- Speaker -->
+        <div class="card">
+            <h2>Speaker</h2>
+
+            <img src="butter.jpeg" alt="Speaker">
+
+            <p>High-quality sound speaker.</p>
+
+            <h3>₹120</h3>
+
+            <button>Buy Now</button>
+        </div>
+
+    </div>
+
+</body>
+</html>

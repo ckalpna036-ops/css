@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Navigation Bar</title>
+
+    <style>
+        body{
+            margin:0;
+            font-family: Arial, sans-serif;
+        }
+
+        nav{
+            background-color: rgb(38, 114, 176);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+        }
+
+        .logo{
+            color: white;
+            font-size: 35px;
+            font-weight: italic;
+        }
+
+        nav ul{
+            list-style: none;
+            display: flex;
+            gap: 22px;
+            margin: 15px;
+            padding: 15px;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover{
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">LOGO</div>
+
+        <ul>
+            <li><a href="#">Nav 1</a></li>
+            <li><a href="#">Nav 2</a></li>
+            <li><a href="#">Nav 3</a></li>
+            <li><a href="#">Nav 4</a></li>
+        </ul>
+    </nav>
+
+    <h1 style="color:rgb(53, 93, 126);">Inline Styling</h1>
+
+    <p style="color:rgb(123, 12, 151);">
+        We apply inline styles to elements directly in the HTML code.
+    </p>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Scroll</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+
+        .container {
+            display: flex;
+            width: 400vw;
+            height: 100vh;
+        }
+
+        .section {
+            width: 100vw;
+            height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-size: 50px;
+            flex-shrink: 0;
+
+            position: sticky;
+            top: 0;
+        }
+
+        .section1 {
+            background: lightcoral;
+        }
+
+        .section2 {
+            background: lightblue;
+        }
+
+        .section3 {
+            background: lightgreen;
+        }
+
+        .section4 {
+            background: plum;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <section class="section section1">
+            Section 1
+        </section>
+
+        <section class="section section2">
+            Section 2
+        </section>
+
+        <section class="section section3">
+            Section 3
+        </section>
+
+        <section class="section section4">
+            Section 4
+        </section>
+
+    </div>
+
+</body>
+</html>

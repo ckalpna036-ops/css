@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Image</title>
+
+    <style>
+        body {
+            margin: 0;
+
+            background-image: url('https://picsum.photos/1920/1080');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100vh;
+        }
+
+        .fg-image {
+            position: absolute;
+
+            width: 200px;
+            height: 200px;
+
+            top: 200px;
+            left: 600px;
+
+            border-radius: 20px;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <!-- Foreground Image -->
+    <img 
+        class="fg-image"
+        src="https://picsum.photos/200/200"
+        alt="Foreground Image"
+    >
+
+</body>
+</html>

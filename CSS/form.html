@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Pseudo Classes</title>
+
+    <style>
+
+        /* Common input styling */
+        input {
+            margin: 8px;
+            padding: 8px;
+            border: none;
+            border-bottom: 2px solid rgb(47, 55, 201);
+            outline: none;
+        }
+
+        /* First Name and Last Name - Arial */
+        input.name {
+            font-family: Arial;
+        }
+
+        /* Middle Name - Courier New */
+        input.middle {
+            font-family: "Courier New";
+        }
+
+        /* Email - different font */
+        input.email {
+            font-family: Georgia;
+        }
+
+        /* Age - different font */
+        input.age {
+            font-family: Verdana;
+        }
+
+        /* Location - different font */
+        input.location {
+            font-family: "Times New Roman";
+        }
+
+
+        /* ------------------------- */
+        /* INPUT PSEUDO CLASSES */
+        /* ------------------------- */
+
+
+        /* Enabled input */
+        input:enabled {
+            background-color: white;
+        }
+
+
+        /* Disabled input */
+        input:disabled {
+            background-color: lightgray;
+            cursor: not-allowed;
+        }
+
+
+        /* Valid input */
+        input:valid {
+            border-bottom-color: green;
+        }
+
+
+        /* Invalid input */
+        input:invalid {
+            border-bottom-color: red;
+        }
+
+
+        /* Required fields */
+        input:required {
+            background-color: #fff8e1;
+        }
+
+
+        /* Optional fields */
+        input:optional {
+            background-color: #f5f5f5;
+        }
+
+
+        /* Age is within range */
+        input.age:in-range {
+            border-bottom-color: green;
+        }
+
+
+        /* Age is outside range */
+        input.age:out-of-range {
+            border-bottom-color: red;
+        }
+
+
+        /* Read-only input */
+        input:read-only {
+            background-color: #eeeeee;
+        }
+
+
+        /* Read-write input */
+        input:read-write {
+            background-color: white;
+        }
+
+
+        /* Placeholder is visible */
+        input:placeholder-shown {
+            border-bottom-color: orange;
+        }
+
+
+        /* Checkbox checked */
+        input[type="checkbox"]:checked {
+            accent-color: green;
+        }
+
+
+        label {
+            font-family: Arial;
+            font-weight: bold;
+        }
+
+        .field {
+            margin: 15px;
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <h2>Personal Information</h2>
+
+    <form>
+
+        <!-- FIRST NAME -->
+        <div class="field">
+            <label>First Name:</label>
+            <input
+                type="text"
+                class="name"
+                placeholder="Enter First Name"
+                required>
+        </div>
+
+
+        <!-- MIDDLE NAME -->
+        <div class="field">
+            <label>Middle Name:</label>
+            <input
+                type="text"
+                class="middle"
+                placeholder="Enter Middle Name">
+        </div>
+
+
+        <!-- LAST NAME -->
+        <div class="field">
+            <label>Last Name:</label>
+            <input
+                type="text"
+                class="name"
+                placeholder="Enter Last Name"
+                required>
+        </div>
+
+
+        <!-- EMAIL -->
+        <div class="field">
+            <label>Email:</label>
+            <input
+                type="email"
+                class="email"
+                placeholder="Enter Email"
+                required>
+        </div>
+
+
+        <!-- AGE -->
+        <div class="field">
+            <label>Age:</label>
+            <input
+                type="number"
+                class="age"
+                min="18"
+                max="60"
+                placeholder="18 - 100"
+                required>
+        </div>
+
+
+        <!-- LOCATION -->
+        <div class="field">
+            <label>Location:</label>
+            <input
+                type="text"
+                class="location"
+                placeholder="Enter Location">
+        </div>
+
+
+        <!-- READ ONLY -->
+        <div class="field">
+            <label>Country:</label>
+            <input
+                type="text"
+                value="India"
+                readonly>
+        </div>
+
+
+        <!-- DISABLED -->
+        <div class="field">
+            <label>Disabled:</label>
+            <input
+                type="text"
+                value="Not Available"
+                disabled>
+        </div>
+
+
+        <!-- CHECKBOX -->
+        <div class="field">
+            <input type="checkbox" id="agree" required>
+            <label for="agree">I agree to the terms</label>
+        </div>
+
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+
+</html>

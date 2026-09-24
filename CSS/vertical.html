@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sticky Vertical Scroll</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: black;
+        }
+
+        .section {
+            height: 200px;
+            position: sticky;
+            top: 0;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-size: 50px;
+            color: white;
+        }
+
+        .section1 {
+            background: rgb(69, 8, 20);
+        }
+
+        .section2 {
+            background: rgb(27, 38, 71);
+        }
+
+        .section3 {
+            background: rgb(8, 79, 39);
+        }
+
+        .section4 {
+            background: rgb(25, 6, 25);
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="section section1">
+        Section 1
+    </section>
+
+    <section class="section section2">
+        Section 2
+    </section>
+
+    <section class="section section3">
+        Section 3
+    </section>
+
+    <section class="section section4">
+        Section 4
+    </section>
+
+</body>
+</html>
