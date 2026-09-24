@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>FlowTask</title>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+
+<body class="bg-[#F8FAFC] text-[#0F172A]">
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="h-[72px] bg-white border-b border-[#E2E8F0]">
+
+        <div class="max-w-[1200px] mx-auto px-6 h-full
+                    flex items-center justify-between">
+
+            <!-- LOGO -->
+            <div class="flex items-center gap-2">
+
+                <div class="w-8 h-8 rounded-lg
+                            bg-[#4F46E5]
+                            flex items-center justify-center
+                            text-white font-bold">
+
+                    F
+
+                </div>
+
+                <span class="text-[16px] font-bold">
+                    FlowTask
+                </span>
+
+            </div>
+
+
+            <!-- NAV LINKS -->
+
+            <div class="hidden sm:flex items-center gap-8
+                        text-[14px] font-medium">
+
+                <a href="#" class="hover:text-[#4F46E5]">
+                    Features
+                </a>
+
+                <a href="#" class="hover:text-[#4F46E5]">
+                    Pricing
+                </a>
+
+                <a href="#" class="hover:text-[#4F46E5]">
+                    Docs
+                </a>
+
+            </div>
+
+
+            <!-- RIGHT SIDE -->
+
+            <div class="hidden sm:flex items-center gap-6">
+
+                <a href="#" class="text-[14px] font-medium">
+                    Login
+                </a>
+
+                <button
+                    class="bg-[#4F46E5] hover:bg-[#4338CA]
+                           text-white text-[14px] font-medium
+                           px-5 py-2.5 rounded-lg">
+
+                    Get Started
+
+                </button>
+
+            </div>
+
+
+            <!-- MOBILE MENU -->
+
+            <button class="sm:hidden text-xl">
+                ☰
+            </button>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="min-h-[520px] flex items-center">
+
+        <div class="max-w-[1200px] mx-auto px-6 w-full">
+
+            <div class="grid grid-cols-1 lg:grid-cols-2
+                        gap-12 items-center">
+
+
+                <!-- HERO TEXT -->
+
+                <div>
+
+                    <!-- Small badge -->
+
+                    <span
+                        class="inline-block
+                               bg-[#EEF2FF]
+                               text-[#4F46E5]
+                               text-[12px] font-medium
+                               px-3 py-1.5
+                               rounded-full">
+
+                        Work Smarter
+
+                    </span>
+
+
+                    <!-- Heading -->
+
+                    <h1
+                        class="mt-5
+                               text-[36px]
+                               lg:text-[48px]
+                               font-bold
+                               leading-[1.1]
+                               text-[#0F172A]">
+
+                        Build Better Products
+                        Faster With Our Platform
+
+                    </h1>
+
+
+                    <!-- Paragraph -->
+
+                    <p
+                        class="mt-5
+                               text-[18px]
+                               leading-[1.6]
+                               text-[#475569]
+                               max-w-[600px]">
+
+                        Streamline your workflow, collaborate
+                        with your team, and ship faster with
+                        our all-in-one platform.
+
+                    </p>
+
+
+                    <!-- BUTTONS -->
+
+                    <div
+                        class="mt-8
+                               flex flex-col sm:flex-row
+                               gap-4">
+
+                        <button
+                            class="bg-[#4F46E5]
+                                   hover:bg-[#4338CA]
+                                   text-white
+                                   font-medium
+                                   px-7 py-3
+                                   rounded-lg">
+
+                            Get Started
+
+                        </button>
+
+
+                        <button
+                            class="border-2
+                                   border-[#C7D2FE]
+                                   text-[#4F46E5]
+                                   bg-white
+                                   font-medium
+                                   px-7 py-3
+                                   rounded-lg
+                                   hover:bg-[#EEF2FF]">
+
+                            View Demo
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ================= DASHBOARD VISUAL ================= -->
+
+                <div class="relative hidden md:block">
+
+                    <!-- Background circle -->
+
+                    <div
+                        class="absolute
+                               w-[300px] h-[300px]
+                               bg-[#EEF2FF]
+                               rounded-full
+                               top-8 left-1/2
+                               -translate-x-1/2">
+                    </div>
+
+
+                    <!-- Dashboard -->
+
+                    <div
+                        class="relative
+                               bg-white
+                               border border-[#E2E8F0]
+                               rounded-2xl
+                               shadow-xl
+                               p-5">
+
+                        <!-- Dashboard top -->
+
+                        <div class="flex items-center justify-between">
+
+                            <div class="flex items-center gap-2">
+
+                                <div
+                                    class="w-3 h-3
+                                           rounded-full
+                                           bg-[#4F46E5]">
+                                </div>
+
+                                <span
+                                    class="text-sm font-semibold">
+
+                                    Dashboard
+
+                                </span>
+
+                            </div>
+
+                            <span class="text-xs text-[#94A3B8]">
+                                This Week
+                            </span>
+
+                        </div>
+
+
+                        <!-- Dashboard content -->
+
+                        <div class="mt-6 grid grid-cols-3 gap-3">
+
+                            <div
+                                class="bg-[#F8FAFC]
+                                       rounded-lg p-3">
+
+                                <p class="text-xs text-[#64748B]">
+                                    Projects
+                                </p>
+
+                                <p class="text-xl font-bold mt-1">
+                                    24
+                                </p>
+
+                            </div>
+
+
+                            <div
+                                class="bg-[#F8FAFC]
+                                       rounded-lg p-3">
+
+                                <p class="text-xs text-[#64748B]">
+                                    Tasks
+                                </p>
+
+                                <p class="text-xl font-bold mt-1">
+                                    128
+                                </p>
+
+                            </div>
+
+
+                            <div
+                                class="bg-[#F8FAFC]
+                                       rounded-lg p-3">
+
+                                <p class="text-xs text-[#64748B]">
+                                    Done
+                                </p>
+
+                                <p
+                                    class="text-xl font-bold
+                                           mt-1 text-[#4F46E5]">
+
+                                    96
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Fake chart -->
+
+                        <div class="mt-5">
+
+                            <p
+                                class="text-sm font-semibold
+                                       mb-3">
+
+                                Productivity
+
+                            </p>
+
+
+                            <div
+                                class="h-[140px]
+                                       bg-[#F8FAFC]
+                                       rounded-lg
+                                       flex items-end
+                                       gap-3
+                                       p-5">
+
+                                <div
+                                    class="w-8 bg-[#C7D2FE]
+                                           rounded-t-md h-[35%]">
+                                </div>
+
+                                <div
+                                    class="w-8 bg-[#A5B4FC]
+                                           rounded-t-md h-[50%]">
+                                </div>
+
+                                <div
+                                    class="w-8 bg-[#818CF8]
+                                           rounded-t-md h-[45%]">
+                                </div>
+
+                                <div
+                                    class="w-8 bg-[#6366F1]
+                                           rounded-t-md h-[70%]">
+                                </div>
+
+                                <div
+                                    class="w-8 bg-[#4F46E5]
+                                           rounded-t-md h-[90%]">
+                                </div>
+
+                                <div
+                                    class="w-8 bg-[#4338CA]
+                                           rounded-t-md h-[75%]">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= FEATURES ================= -->
+
+    <section class="bg-white py-16">
+
+        <div class="max-w-[1200px] mx-auto px-6">
+
+
+            <!-- SECTION HEADING -->
+
+            <div class="text-center">
+
+                <h2
+                    class="text-[32px]
+                           font-bold
+                           text-[#0F172A]">
+
+                    Powerful Features
+
+                </h2>
+
+
+                <p
+                    class="mt-3
+                           text-[16px]
+                           text-[#475569]">
+
+                    Everything you need to build,
+                    manage and grow your product.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- FEATURE GRID -->
+
+            <div
+                class="mt-12
+                       grid
+                       grid-cols-1
+                       sm:grid-cols-2
+                       lg:grid-cols-3
+                       gap-6">
+
+
+                <!-- CARD 1 -->
+
+                <div
+                    class="bg-white
+                           border border-[#E2E8F0]
+                           rounded-xl
+                           p-6">
+
+                    <div
+                        class="w-12 h-12
+                               bg-[#EEF2FF]
+                               rounded-xl
+                               flex items-center
+                               justify-center
+                               text-2xl">
+
+                        ⚡
+
+                    </div>
+
+
+                    <h3
+                        class="mt-5
+                               text-[20px]
+                               font-semibold">
+
+                        Fast & Reliable
+
+                    </h3>
+
+
+                    <p
+                        class="mt-3
+                               text-[16px]
+                               text-[#475569]
+                               leading-6">
+
+                        Experience blazing fast
+                        performance with our
+                        optimized platform.
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- CARD 2 -->
+
+                <div
+                    class="bg-white
+                           border border-[#E2E8F0]
+                           rounded-xl
+                           p-6">
+
+                    <div
+                        class="w-12 h-12
+                               bg-[#EEF2FF]
+                               rounded-xl
+                               flex items-center
+                               justify-center
+                               text-2xl">
+
+                        👥
+
+                    </div>
+
+
+                    <h3
+                        class="mt-5
+                               text-[20px]
+                               font-semibold">
+
+                        Team Collaboration
+
+                    </h3>
+
+
+                    <p
+                        class="mt-3
+                               text-[16px]
+                               text-[#475569]
+                               leading-6">
+
+                        Work together seamlessly
+                        with real-time updates
+                        and collaboration.
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- CARD 3 -->
+
+                <div
+                    class="bg-white
+                           border border-[#E2E8F0]
+                           rounded-xl
+                           p-6">
+
+                    <div
+                        class="w-12 h-12
+                               bg-[#EEF2FF]
+                               rounded-xl
+                               flex items-center
+                               justify-center
+                               text-2xl">
+
+                        🛡️
+
+                    </div>
+
+
+                    <h3
+                        class="mt-5
+                               text-[20px]
+                               font-semibold">
+
+                        Secure by Design
+
+                    </h3>
+
+
+                    <p
+                        class="mt-3
+                               text-[16px]
+                               text-[#475569]
+                               leading-6">
+
+                        Your data stays protected
+                        with enterprise-grade
+                        security.
+
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+</body>
+</html>
